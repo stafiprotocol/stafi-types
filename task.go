@@ -56,6 +56,8 @@ func NewTypes(sarpc SarpcInterface, logger LoggerInterface, tickerSeconds int64,
 		Endpoint:      endpoint,
 		stafiTypesUrl: useUrl,
 		stafiJsonBts:  typesBts,
+		sarpc:         sarpc,
+		logger:        logger,
 	}
 	return s, nil
 }
