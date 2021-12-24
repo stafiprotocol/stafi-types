@@ -544,5 +544,14 @@
         "u128"
       ]
     ]
+  },
+  "AccountTestData": {
+    "type": "struct",
+    "type_mapping": [
+      [
+        "free",
+        "u128"
+      ]
+    ]
   }
 }
