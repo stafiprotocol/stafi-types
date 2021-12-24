@@ -14,7 +14,8 @@ var (
 	retryLimit        = 6
 	SecondsWait       = 3 * time.Second
 	mainnetChain      = "Stafi"
-	testnetChain      = "Development"
+	devChain          = "Development"
+	seiyaChain        = "Stafi Testnet Seiya"
 )
 
 type Types struct {
@@ -36,7 +37,9 @@ func NewTypes(sarpc SarpcInterface, logger LoggerInterface, tickerSeconds int64,
 	switch chain {
 	case mainnetChain:
 		useUrl = stafiMainnetTypes
-	case testnetChain:
+	case devChain:
+		useUrl = stafiTestnetTypes
+	case seiyaChain:
 		useUrl = stafiTestnetTypes
 	default:
 		return nil, fmt.Errorf("not support chain: %s", chain)
