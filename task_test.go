@@ -1,7 +1,7 @@
 package types_test
 
 import (
-	"stafi-types"
+	"github.com/stafiprotocol/stafi-types"
 	"testing"
 )
 
