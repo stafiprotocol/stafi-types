@@ -535,5 +535,14 @@
         "u128"
       ]
     ]
+  },
+  "AccountLpData": {
+    "type": "struct",
+    "type_mapping": [
+      [
+        "free",
+        "u128"
+      ]
+    ]
   }
 }
